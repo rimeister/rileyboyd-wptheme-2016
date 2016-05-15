@@ -1096,7 +1096,16 @@ input[type=submit]:hover,
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  border-bottom: 2px solid #000000;  
+  border-bottom: none;  
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    border-bottom: 2px solid #000000;  
+  }
+
 }
 
 .dropdown-menu > li > a:hover,
@@ -1119,8 +1128,9 @@ input[type=submit]:hover,
 
 .nav-search {    
     clear: both;
-    margin: auto;
     float: none;
+    margin: auto;
+    padding-bottom: 15px;    
     text-align: center;
 }
 
