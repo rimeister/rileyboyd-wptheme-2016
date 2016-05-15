@@ -93,7 +93,7 @@
 						<h1>My name is Riley.</h1>
 						<h2>I have a curious mind, a creative spirit, and a knack for adventure.</h2>
 					</div>
-					<img src="<?php echo get_template_directory_uri()?>/images/home-page/homepage-hero.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri()?>/images/hero/homepage-hero.jpg" alt="Picture of Riley in the Scottish Highlands">
 					<!--<?php activello_featured_slider(); ?>-->
 				</div>
 
