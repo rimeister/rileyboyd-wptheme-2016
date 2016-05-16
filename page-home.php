@@ -18,7 +18,7 @@ get_header(); ?>
 				<?php
 
 					$args = array(
-					    'posts_per_page' => 5,
+					    'posts_per_page' => 2,
 					    'order' => 'DESC'
 					);
 
