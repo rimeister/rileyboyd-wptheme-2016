@@ -396,7 +396,7 @@ article.post:first-child .post-inner-content {
     padding-top: 0;
 }
 .entry-header {
-  text-align: center;
+  text-align: left;
 }
 .entry-title {
   font-family: "Lora", serif;
@@ -540,7 +540,7 @@ article.grid iframe {
         padding: 0 0 50px;
     }
     .home.page article.post:nth-child(2) .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content{
-        padding: 50px 0;
+        padding: 40px 0 50px;
         margin-bottom: 30px;
     }
     .blog.home .page-1 article.post:first-child .read-more, .blog.home .page-1 article.post:nth-child(2) .read-more,
@@ -1845,4 +1845,29 @@ table#wp-calendar {
   font-style: italic;
   line-height: 31px;
   margin: auto;
+}
+
+/* Home Page */
+.article-container > h3 {
+  color: #696969;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin-top: 20px;  
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article-container > h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 40px;
+    margin-left: -20px;
+    background: #e90040;
 }
