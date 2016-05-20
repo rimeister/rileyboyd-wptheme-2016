@@ -1818,12 +1818,13 @@ table#wp-calendar {
 
 /* Hero */
 .hero {
+  /*border-bottom: 4px solid #e90040;*/
   position: relative;
 }
 
 .hero .hero-text {
     position: absolute;
-    top: 37%;    
+    top: 22%;
     right: 20px;
     width: 50%;
     text-align: center;
@@ -1831,6 +1832,7 @@ table#wp-calendar {
 
 .hero-text h1 {
   color: #ffffff;
+  display: none;  
   font-family: 'Montserrat', sans-serif;
   font-size: 43px;
   margin: 16px 0;
@@ -1838,13 +1840,36 @@ table#wp-calendar {
 }
 
 .hero-text h2 {
-  width: 60%;
+  width: 100%;
   color: #ffffff;
   font-family: 'Lora', serif;
   font-size: 28px;
   font-style: italic;
   line-height: 31px;
   margin: auto;
+  font-size: 19px;
+  line-height: 26px;  
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .hero-text {
+  }
+
+  .hero-text h1 {
+    display: initial;
+  }
+
+  .hero-text h2 {
+    width: 60%;
+    font-size: 28px;
+    line-height: 31px;  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero .hero-text {
+    top: 37%;
+  }
 }
 
 /* Home Page */
