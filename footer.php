@@ -29,7 +29,7 @@
 <!-- JS Plugins -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/unitegallery.min.js"></script>
-<script type='text/javascript' src='<?php echo get_template_directory_uri()?>/themes/default/ug-theme-default.js'></script> 
+<script type='text/javascript' src='<?php echo get_template_directory_uri()?>/themes/tiles/ug-theme-tiles.js'></script> 
 
 <!-- My Scripts -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/scripts.js"></script>

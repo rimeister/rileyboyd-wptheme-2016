@@ -1,3 +1,5 @@
 $(document).ready(function(){
-	$('#gallery').unitegallery();
+	$('#gallery').unitegallery({
+		gallery_theme: "tiles"	
+	});
 });
