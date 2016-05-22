@@ -48,7 +48,9 @@
 						</div>
 
 						<div class="logo-wrapper">
-							<img src="<?php echo get_template_directory_uri()?>/images/header/logo-sq.jpg" alt="Riley Boyd Logo" class="logo">
+							<a href="<?php echo get_site_url(); ?>">
+								<img src="<?php echo get_template_directory_uri()?>/images/header/logo-sq.jpg" alt="Riley Boyd Logo" class="logo">
+							</a>
 						</div>
 
 						<?php activello_header_menu(); // main navigation ?>
@@ -86,6 +88,9 @@
 
 	<div id="content" class="site-content">
 
+		<?php if (is_front_page()) { ?>
+
+
 		<div class="container">
 
 			<div class="row">
@@ -102,6 +107,12 @@
 			</div>
 
 		</div>
+
+		<?php
+
+			}
+
+		?>
 
 		<div class="container main-content-area">
 
