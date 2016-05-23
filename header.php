@@ -117,9 +117,6 @@
 		<div class="container main-content-area">
 
 			<?php if( is_single() && has_category() ) : ?>
-			<div class="cat-title">
-				<?php echo get_the_category_list(); ?>
-			</div>
 			<?php endif; ?>
                         <?php
                             global $post;
