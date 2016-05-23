@@ -95,7 +95,7 @@
 
 			<div class="row">
 
-				<div class="hero">
+				<div class="hero col-sm-12">
 					<div class="hero-text">
 						<h1>My name is Riley.</h1>
 						<h2>I have a curious mind, a creative spirit, and a love for adventure.</h2>
