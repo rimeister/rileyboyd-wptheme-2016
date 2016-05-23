@@ -319,6 +319,9 @@ textarea {
 }
 /* =Post styling
 ----------------------------------------------- */
+.content-area h1 {
+    margin-top: 0;
+}
 .entry-meta a {
   font-size: 13px;
   color: #6B6B6B;
