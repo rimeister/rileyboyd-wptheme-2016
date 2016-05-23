@@ -71,7 +71,7 @@ get_header(); ?>
 						       ?>
 
 								<div class="read-more">
-									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'See Photos', 'activello' ); ?></a>
 								</div>		
 
 					   		</div>

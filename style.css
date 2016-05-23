@@ -391,10 +391,11 @@ hr.section-divider {
 .archive .post-inner-content {
   margin-bottom: 50px;
 }
-.page .post-inner-content {
+./*page .post-inner-content {
   border: 0;
         padding: 0;
 }
+*/
 article.post:first-child .post-inner-content {
     padding-top: 0;
 }
@@ -535,14 +536,18 @@ article.grid iframe {
         border-bottom: 1px solid #dedede;
     }
 
-    .home.page .page-1 article.post:first-child .post-inner-content, .home.page .page-1 article.post:nth-child(2) .post-inner-content{
+    .home.page .page-1 article.post:first-child .post-inner-content, .home.page .page-1 article.post:nth-child(2) .post-inner-content, .post-inner-content{
         border-bottom: 1px solid #dedede;
     }
 
     .blog.home .page-1 article.post:first-child .post-inner-content{
         padding: 0 0 50px;
     }
-    .home.page article.post:nth-child(2) .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content{
+    .post-inner-content{
+      padding: 0 0 50px;
+      margin-bottom: 30px;    
+    }
+    .home.page article.post:nth-child(2) .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content {
         padding: 40px 0 50px;
         margin-bottom: 30px;
     }
@@ -654,9 +659,6 @@ article.grid iframe {
           transition: opacity 0.3s linear;
   display: block;
   margin: auto;
-}
-.single-featured:hover {
-  opacity: 0.8;
 }
 .wp-caption {
   border: 1px solid #ddd;
@@ -1898,4 +1900,12 @@ table#wp-calendar {
     width: 40px;
     margin-left: -20px;
     background: #e90040;
+}
+
+.home .about-me-sidebar-img {
+  display: none;
+}
+
+.about-me-sidebar-img {
+  margin-bottom: 15px;
 }
