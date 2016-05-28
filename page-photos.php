@@ -10,12 +10,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<h1>Photos</h1>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
 		<main id="main" class="site-main <?php echo "page-".$paged;?>" role="main">				
 
 			<div class="article-container">
-				<h1>Photos</h1>
 				<?php
 
 					$args = array(
