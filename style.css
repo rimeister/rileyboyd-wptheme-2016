@@ -324,7 +324,9 @@ textarea {
 ----------------------------------------------- */
 .content-area h1 {
     margin-top: 0;
-    text-align: center;
+}
+.content-area > h1 {
+  text-align: center;
 }
 .entry-meta a {
   font-size: 13px;
