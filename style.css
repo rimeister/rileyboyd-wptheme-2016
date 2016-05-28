@@ -1827,6 +1827,11 @@ table#wp-calendar {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .site-navigation-inner {
+    padding-bottom: 0;
+  }
+
   .site-navigation-inner .logo-wrapper {
     float: left;
     padding-right: 0;
