@@ -331,8 +331,15 @@ textarea {
 .entry-header > h1.entry-title {
   text-align: left;
 }
-.content-area > h1 {
+h1.page-header-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 4px;
   text-align: center;
+  text-transform: uppercase;
+  /*color: rgb(233, 0, 64);*/
+  /*border-bottom: 1px solid rgb(233, 0, 64);*/
 }
 .entry-meta a {
   font-size: 13px;
