@@ -1914,11 +1914,11 @@ table#wp-calendar {
 
 /* Home Page */
 .article-container > h3 {
-  color: #696969;
+  color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 40px;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   margin-top: 20px;  
   margin-bottom: 0;
   position: relative;
