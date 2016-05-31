@@ -1916,7 +1916,7 @@ table#wp-calendar {
 .article-container > h3 {
   color: #696969;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 40px;
   letter-spacing: 1px;
   margin-top: 20px;  
@@ -1967,6 +1967,7 @@ table#wp-calendar {
   color: #e90040;
   margin: 0;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .cv-wrapper div {
