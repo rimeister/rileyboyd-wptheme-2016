@@ -23,7 +23,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/unite-gallery.css">
-<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/themes/default/ug-theme-default.css' type='text/css' /> 
+<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/themes/default/ug-theme-default.css' type='text/css' />
+
+<?php include_once("template_files/analytics/analyticstracking.php") ?> 
 
 <?php wp_head(); ?>
 
