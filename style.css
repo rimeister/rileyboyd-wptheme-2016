@@ -805,6 +805,19 @@ ul#menu-social-items,
 .recent-posts-wrapper .post .post-content {
   margin-left: 100px;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .recent-posts-wrapper .post {
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .recent-posts-wrapper .post .post-content {
+    line-height: 20px;
+  }
+}
+
 .widget .post-content > span {
   display: block;
 }
