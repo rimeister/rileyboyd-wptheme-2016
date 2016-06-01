@@ -104,7 +104,7 @@ get_header(); ?>
 								<header class="entry-header page-header">
 									<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-									<?php if ( 'post' == get_post_type() ) : ?>
+									<?php if ( 'photo_album' == get_post_type() ) : ?>
 									<div class="entry-meta">
 										<?php activello_posted_on(); ?>
 
@@ -174,7 +174,7 @@ get_header(); ?>
 								<header class="entry-header page-header">
 									<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-									<?php if ( 'post' == get_post_type() ) : ?>
+									<?php if ( 'creation' == get_post_type() ) : ?>
 									<div class="entry-meta">
 										<?php activello_posted_on(); ?>
 
