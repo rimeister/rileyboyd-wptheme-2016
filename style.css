@@ -1192,7 +1192,7 @@ input[type=submit]:hover,
     position: absolute;
     top: 89px;
     left: 0;
-    padding: 0 15px 10px;
+    padding: 0 15px;
     width: 100% !important;
     z-index: 999;
     border-bottom: 1px solid #808080;
