@@ -544,7 +544,6 @@ article.grid iframe {
         display: none;
     }
     .home.page .post-inner-content, .blog.home article.post .post-inner-content{
-        border: 0;
         padding: 30px 0;
     }
     .blog.home .page-1 article.post:first-child, .blog.home .page-1 article.post:nth-child(2) {
