@@ -34,7 +34,7 @@ class activello_recent_posts extends WP_Widget
 
                   $featured_args = array(
                       'post_type' => array('post', 'photo_album', 'creation'),
-                      'posts_per_page' => $limit + 1 ,
+                      'posts_per_page' => $limit,
                       'ignore_sticky_posts' => 1
                     );
 
