@@ -809,8 +809,8 @@ ul#menu-social-items,
 @media only screen and (min-width: 768px) {
 
   .recent-posts-wrapper .post {
-    padding-bottom: 15px;
-    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-top: 10px;
   }
 
   .recent-posts-wrapper .post .post-content {
