@@ -13,20 +13,23 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
 		<main id="main" class="site-main <?php echo "page-".$paged;?>" role="main">
+
+		<?php
+			$args = array(
+			    'posts_per_page' => 2,
+			    'order' => 'DESC'
+			);
+
+			$rp = new WP_Query( $args );
+
+			if($rp->have_posts()) :
+		?>
+
 			<div class="article-container">
 				<h3>Latest Articles</h3>
 				<?php
-
-					$args = array(
-					    'posts_per_page' => 2,
-					    'order' => 'DESC'
-					);
-
-					$rp = new WP_Query( $args );
-
-					if($rp->have_posts()) :
-					    while($rp->have_posts()) : $rp->the_post();
-					?>
+				    while($rp->have_posts()) : $rp->the_post();
+				?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="blog-item-wrap">
@@ -77,26 +80,31 @@ get_header(); ?>
 
 				<?php
 					endwhile;
-					    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
-					endif;
 				?>
-			</div>						
+			</div>			
+
+			<?php
+				wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
+				endif;			
+			?>			
+
+			<?php
+				$args = array(
+				    'posts_per_page' => 2,
+				    'order' => 'DESC',
+				     'post_type' => 'photo_album' 
+				);
+
+				$pp = new WP_Query( $args );
+
+				if($pp->have_posts()) :
+			?>
 
 			<div class="article-container">
 				<h3>Latest Photos</h3>
 				<?php
-
-					$args = array(
-					    'posts_per_page' => 2,
-					    'order' => 'DESC',
-					     'post_type' => 'photo_album' 
-					);
-
-					$pp = new WP_Query( $args );
-
-					if($pp->have_posts()) :
-					    while($pp->have_posts()) : $pp->the_post();
-					?>
+				    while($pp->have_posts()) : $pp->the_post();
+				?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="blog-item-wrap">
@@ -147,26 +155,31 @@ get_header(); ?>
 
 				<?php
 					endwhile;
-					    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
-					endif;
 				?>
 			</div>						
+
+			<?php
+			    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
+				endif;			
+			?>
+
+			<?php
+				$args = array(
+				    'posts_per_page' => 2,
+				    'order' => 'DESC',
+				     'post_type' => 'creation' 
+				);
+
+				$pp = new WP_Query( $args );
+
+				if($pp->have_posts()) :
+			?>
 
 			<div class="article-container">
 				<h3>Latest Creations</h3>
 				<?php
-
-					$args = array(
-					    'posts_per_page' => 2,
-					    'order' => 'DESC',
-					     'post_type' => 'creation' 
-					);
-
-					$pp = new WP_Query( $args );
-
-					if($pp->have_posts()) :
-					    while($pp->have_posts()) : $pp->the_post();
-					?>
+				    while($pp->have_posts()) : $pp->the_post();
+				?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="blog-item-wrap">
@@ -217,12 +230,13 @@ get_header(); ?>
 
 				<?php
 					endwhile;
-					    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
-					endif;
 				?>
 			</div>						
 
-
+			<?php
+			wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
+			endif;
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
