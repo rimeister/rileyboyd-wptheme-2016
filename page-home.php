@@ -92,7 +92,7 @@ get_header(); ?>
 				$args = array(
 				    'posts_per_page' => 2,
 				    'order' => 'DESC',
-				     'post_type' => 'photo_album' 
+				     'post_type' => 'photos' 
 				);
 
 				$pp = new WP_Query( $args );
@@ -112,7 +112,7 @@ get_header(); ?>
 								<header class="entry-header page-header">
 									<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-									<?php if ( 'photo_album' == get_post_type() ) : ?>
+									<?php if ( 'photos' == get_post_type() ) : ?>
 									<div class="entry-meta">
 										<?php activello_posted_on(); ?>
 

@@ -8,6 +8,11 @@
 	<div class="blog-item-wrap">
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
+
+				<?php if ( function_exists('yoast_breadcrumb') ) {
+				  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+				} ?>
+
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
