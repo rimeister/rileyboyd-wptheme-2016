@@ -37,7 +37,8 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+			<h2>I haven't posted any articles yet. Sorry about that!</h2>
+			<p><a href="/">Back to the home page</a>.</p>
 
 		<?php endif; ?>
 

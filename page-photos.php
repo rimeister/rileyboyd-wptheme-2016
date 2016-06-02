@@ -80,6 +80,13 @@ get_header(); ?>
 				<?php
 					endwhile;
 					    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
+					else:
+				?>
+
+					<h2>I haven't posted any photo albums yet. Sorry about that!</h2>
+					<p><a href="/">Back to the home page</a>.</p>
+
+				<?php
 					endif;
 				?>
 			</div>						
