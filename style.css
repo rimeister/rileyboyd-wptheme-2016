@@ -423,8 +423,9 @@ article.post:first-child .post-inner-content {
 }
 .entry-title {
   font-family: "Lora", serif;
-  font-size: 24px;
+  font-size: 32px;
   font-style: italic;
+  line-height: 38px;  
   margin-top: 0;
   margin-bottom: 15px;
 }
