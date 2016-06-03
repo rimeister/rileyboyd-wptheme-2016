@@ -454,6 +454,7 @@ article.post:first-child .post-inner-content {
 .read-more {
   font-size: 0.875em;
   text-align: center;
+  margin-top: 23px;
 }
 .read-more a {
   border-left: 2px solid #696969;
