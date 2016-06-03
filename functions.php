@@ -342,7 +342,7 @@ function my_post_gallery($output, $attr) {
 function custom_breadcrumbs() {
        
     // Settings
-    $separator          = '&gt;';
+    $separator          = '&raquo;';
     $breadcrums_id      = 'breadcrumbs';
     $breadcrums_class   = 'breadcrumbs';
     $home_title         = 'Home';

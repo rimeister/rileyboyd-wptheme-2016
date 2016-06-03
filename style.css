@@ -2045,13 +2045,17 @@ table#wp-calendar {
   
 #breadcrumbs li{
     display:inline-block;
+    font-size: 13px;
     vertical-align:middle;
-    margin-right:15px;
+    margin-right:5px;
     text-transform: capitalize;
 }
   
 #breadcrumbs .separator{
-    font-size:18px;
-    font-weight:100;
-    color:#ccc;
+  font-weight:100;
+}
+
+#breadcrumbs li.item-current strong {
+  color: #aaaaaa;
+  font-weight: normal;
 }

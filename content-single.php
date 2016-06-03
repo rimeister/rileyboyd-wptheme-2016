@@ -9,9 +9,8 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
-				<?php custom_breadcrumbs(); ?>
-
 				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php custom_breadcrumbs(); ?>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
