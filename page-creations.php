@@ -12,9 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<h1 class="page-header-title">Creations</h1>
 
-		<?php if ( function_exists('yoast_breadcrumb') ) {
-		  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-		} ?>
+		<?php custom_breadcrumbs(); ?>
 
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 

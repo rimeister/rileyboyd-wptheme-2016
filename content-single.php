@@ -9,9 +9,7 @@
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
-				<?php if ( function_exists('yoast_breadcrumb') ) {
-				  yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-				} ?>
+				<?php custom_breadcrumbs(); ?>
 
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 
