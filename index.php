@@ -15,8 +15,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<h1 class="page-header-title">Aritcles</h1>
-
-		<?php custom_breadcrumbs(); ?>
         
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
