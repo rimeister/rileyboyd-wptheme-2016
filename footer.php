@@ -12,6 +12,10 @@
 		</div><!-- close .container -->
 	</div><!-- close .site-content -->
 
+		</div>
+	</div>
+</div>
+
 	<div id="footer-area">
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">

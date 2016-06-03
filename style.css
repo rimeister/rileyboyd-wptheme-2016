@@ -41,6 +41,14 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 body {
   color: #696969;
   background-color: #ffffff;
+/*  background-image: url('images/bg-patterns/greyzz.png');
+  background-image: url('images/bg-patterns/crossword.png');
+  background-image: url('images/bg-patterns/stardust.png');
+  background-image: url('images/bg-patterns/zwartevilt.png');
+  background-image: url('images/bg-patterns/binding_dark.png');
+  background-image: url('images/bg-patterns/witewall_3.png');*/
+  background-image: url('images/bg-patterns/ticks.png');
+  /* Background pattern from subtlepatterns.com */
   word-wrap: break-word;
   font-family: 'Lora', serif;
   line-height: 2;
@@ -83,6 +91,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .container {
+  background-color: #ffffff;  
   max-width: 1090px;
 }
 
@@ -1090,7 +1099,7 @@ input[type=submit]:hover,
 }
 .navbar.navbar-default {
 /*  background-color: #edffff; */
-  background-color: #ffffff;
+  background: none;  
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
   font-weight: 400;
@@ -1640,7 +1649,8 @@ p.logged-in-as {
 ----------------------------------------------- */
 
 #footer-area {
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
+  background: none;
   color: #999;
 }
 #footer-area .footer-widget-area {
@@ -1683,7 +1693,7 @@ p.logged-in-as {
   color: #696969;
 }
 #colophon {
-  padding: 50px 0;
+  background-color: #f2f2f2;
   text-align: center;
 }
 .site-info a {
@@ -1693,8 +1703,10 @@ p.logged-in-as {
   color: #a161bf;
 }
 .site-info {
+  background: none;
   color: #999;
   font-size: 12px;
+  padding: 50px 0;
 }
 .footer-nav.nav > li > a:hover {
   background-color: transparent;
@@ -2077,4 +2089,9 @@ table#wp-calendar {
 #breadcrumbs li.item-current strong {
   color: #aaaaaa;
   font-weight: normal;
+}
+
+.main-page-container {
+/*  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -11px rgba(0, 0, 0, 0.1), -12px 0 15px -11px rgba(0, 0, 0, 0.1);*/
+  padding: 0;
 }
