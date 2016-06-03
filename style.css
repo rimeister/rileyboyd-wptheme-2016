@@ -534,7 +534,6 @@ article.post .post-categories a, .post-inner-content .cat-item a{
 article.post {
   width: 100%;
   margin: 0;
-  padding-right: 10px;
 }
 article.grid {
   padding: 0;
