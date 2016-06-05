@@ -1,7 +1,13 @@
 $(document).ready(function(){
-	$('#gallery').unitegallery({
-		gallery_theme: "tiles"	
-	});
+
+	if ( $('#gallery').length ) {
+
+		$('#gallery').unitegallery({
+			gallery_theme: "tiles"	
+		});
+
+	}
+
 });
 
 // Avoid spam
