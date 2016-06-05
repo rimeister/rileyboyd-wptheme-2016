@@ -788,7 +788,7 @@ object {
 }
 #secondary .widget-title {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   margin-bottom: 15px;
 }
 #secondary .widget-title:after {
@@ -1908,7 +1908,7 @@ table#wp-calendar {
   }
 
   .home .widget-area {
-    margin-top: 0;
+    margin-top: 19px;
   }
 
 }
