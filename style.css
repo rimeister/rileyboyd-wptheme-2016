@@ -40,15 +40,20 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
 body {
   color: #696969;
+  background-attachment: fixed;
   background-color: #ffffff;
-/*  background-image: url('images/bg-patterns/greyzz.png');
-  background-image: url('images/bg-patterns/crossword.png');
+  background-image: url('images/bg-patterns/greyzz.png');
+  background-image: url('images/bg-patterns/crossword.png');/*
   background-image: url('images/bg-patterns/stardust.png');
   background-image: url('images/bg-patterns/zwartevilt.png');
   background-image: url('images/bg-patterns/binding_dark.png');
-  background-image: url('images/bg-patterns/witewall_3.png');*/
-  background-image: url('images/bg-patterns/ticks.png');
+  background-image: url('images/bg-patterns/witewall_3.png');
+  background-image: url('images/bg-patterns/ticks.png');*/
   /* Background pattern from subtlepatterns.com */
+  background-image: url('images/background-road-with-gradient-2800pxwide-50percent-quality.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   word-wrap: break-word;
   font-family: 'Lora', serif;
   line-height: 2;
@@ -2091,6 +2096,6 @@ table#wp-calendar {
 }
 
 .main-page-container {
-/*  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -11px rgba(0, 0, 0, 0.1), -12px 0 15px -11px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -11px rgba(0, 0, 0, 0.1), -12px 0 15px -11px rgba(0, 0, 0, 0.1);
   padding: 0;
 }
