@@ -2140,3 +2140,20 @@ table#wp-calendar {
   box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -11px rgba(0, 0, 0, 0.1), -12px 0 15px -11px rgba(0, 0, 0, 0.1);
   padding: 0;
 }
+
+/* Contact Page */
+.contact-page .post-inner-content {
+  border: none;
+}
+
+.contact-page .post-inner-content .contact-form input[type=text], .contact-page .post-inner-content .contact-form input[type=email], .contact-page .post-inner-content .contact-form textarea {
+  border: 1px solid #dedede;
+  font-family: 'Lora', serif;
+}
+
+.contact-form .btn-primary.active, .contact-form .btn-primary:active, .contact-form .open>.dropdown-toggle.btn-primary, .contact-form .btn-primary.focus, .contact-form .btn-primary:focus {
+    color: #fff;
+    background-color: #e90040;
+    border-color: #e90040;
+}
+
