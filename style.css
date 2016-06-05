@@ -1902,6 +1902,17 @@ table#wp-calendar {
   padding-top: 15px;
 }
 
+@media only screen and (min-width: 992px) {
+  .widget-area {
+      margin-top: 50px;
+  }
+
+  .home .widget-area {
+    margin-top: 0;
+  }
+
+}
+
 .has-sidebar-left #secondary {
   padding-right: 40px;
 }
