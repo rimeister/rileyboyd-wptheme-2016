@@ -329,13 +329,21 @@ textarea {
   clear: both;
   margin: 0 0 1.5em;
 }
+
+
 .main-content-area {
   background-color: #ffffff;
   /*border-left: 1px #e8e8e8 solid;*/  
   /*border-right: 1px #e8e8e8 solid;*/  
-  padding-top: 40px;
   padding-bottom: 40px;
 }
+
+@media only screen and (min-width: 768px) {
+  .main-content-area {
+    padding-top: 40px;
+  }
+}
+
 /* =Post styling
 ----------------------------------------------- */
 .content-area h1 {
@@ -1511,7 +1519,7 @@ p.logged-in-as {
 
 @media(max-width:767px){
   .post-inner-content {
-    padding: 20px 25px;
+    padding: 0px 25px 20px 25px;
   }
   .comment-list .children {
     padding-left: 10px;
@@ -1988,13 +1996,46 @@ table#wp-calendar {
     background: #e90040;
 }
 
-.home .about-me-sidebar-img {
-  display: none;
+@media only screen and (min-width: 768px) {
+
+  .about-me-sidebar-img {
+    width: 50%;
+    display: block;  
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .about-me-text {
+    float: left;
+    margin: 60px 5% 0 5%;  
+    width: 40%;
+  }
+
 }
 
-.about-me-sidebar-img {
-  margin-bottom: 15px;
+@media only screen and (min-width: 992px) {
+
+  .about-me-sidebar-img {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .about-me-text {
+    margin: 15px;
+    width: auto;
+  }
+
 }
+
+@media only screen and (min-width: 992px) {
+
+  .home .about-me-sidebar-img {
+    display: none;
+  }
+
+}
+
 
 /* Curriculum Vitae */
 .cv-wrapper {
