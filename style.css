@@ -1963,22 +1963,25 @@ table#wp-calendar {
 /* Hero */
 .hero {
   position: relative;
+    background-image: url('images/background-road-with-gradient-2800pxwide-50percent-quality.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero > img {
+  display: none;
 }
 
 .hero .hero-text {
-    position: absolute;
-    top: 22%;
-    right: 20px;
-    width: 50%;
-    text-align: center;
+  padding: 15px 0;
 }
 
 .hero-text h1 {
   color: #ffffff;
-  display: none;  
   font-family: 'Montserrat', sans-serif;
   font-size: 43px;
   margin: 16px 0;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1991,11 +1994,29 @@ table#wp-calendar {
   line-height: 31px;
   margin: auto;
   font-size: 19px;
-  line-height: 26px;  
+  line-height: 26px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
+
+  .hero {
+    background: none;
+  }
+
+  .hero > img {
+    display: block;
+    visibility: visible;
+  }
+
+
   .hero .hero-text {
+    padding: 0;
+    position: absolute;
+    top: 22%;
+    right: 20px;
+    width: 50%;
+    text-align: center;  
   }
 
   .hero-text h1 {
@@ -2005,7 +2026,8 @@ table#wp-calendar {
   .hero-text h2 {
     width: 60%;
     font-size: 28px;
-    line-height: 31px;  }
+    line-height: 31px; 
+  }
 
 }
 
@@ -2013,6 +2035,12 @@ table#wp-calendar {
   .hero .hero-text {
     top: 37%;
   }
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
 }
 
 /* Home Page */
@@ -2058,7 +2086,7 @@ table#wp-calendar {
 
   .about-me-text {
     float: left;
-    margin: 60px 5% 0 5%;  
+    margin: 0px 5% 0 5%;  
     width: 40%;
   }
 
