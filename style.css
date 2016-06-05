@@ -2079,15 +2079,15 @@ table#wp-calendar {
 
   .about-me-sidebar-img {
     width: 50%;
-    display: block;  
+    display: none;
     float: left;
     margin-bottom: 15px;
   }
 
   .about-me-text {
     float: left;
-    margin: 0px 5% 0 5%;  
-    width: 40%;
+    margin: 0;  
+    width: 100%;
   }
 
 }
@@ -2109,8 +2109,7 @@ table#wp-calendar {
 
 @media only screen and (min-width: 992px) {
 
-  .home .about-me-sidebar-img {
-    display: none;
+  .about-me-sidebar-img {
   }
 
 }
