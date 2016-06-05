@@ -18,8 +18,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="blog-item-wrap">
-						<div class="post-inner-content">
-
+						<div class="post-inner-content contact-content">
 							<form class="form-horizontal contact-form" role="form" method="post" action="index.php">
 								<div class="form-group">
 									<div class="col-sm-10 col-sm-push-1">

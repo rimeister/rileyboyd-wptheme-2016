@@ -2157,3 +2157,14 @@ table#wp-calendar {
     border-color: #e90040;
 }
 
+.reachouttext {
+  text-align: left;
+}
+
+.reachouttext p {
+  margin: 0 0 5px 0;
+}
+
+.reachouttext p:last-child {
+  margin-bottom: 18px;
+}
