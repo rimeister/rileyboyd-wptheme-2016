@@ -1843,7 +1843,7 @@ p.logged-in-as {
   color: #a161bf;
 }
 .header-search-icon {
-  background: transparent;
+  background: transparent !important;
   color: #696969;
 }
 .header-search-icon:hover {
