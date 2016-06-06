@@ -6,8 +6,9 @@
 
 	$to      = 'contact@rileyboyd.com';
 	$subject = 'Contact Form Message';
-	$headers = "From: $name\r\nReply-to: $email";
-	$message = 'From: '.$name.' <'.$email.'>'.\r\n.$message;
+	$headers = 'From: '.$name.' <'.$email.'>'."\r\n".'Reply-to: '.$email;
+	//rom: '.$name.' <'.$email.'>'
+	$message = 'From: '.$name\r\n.$message;
 	mail($to, $subject, $message, $headers);
 
 ?>
