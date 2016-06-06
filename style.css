@@ -2269,3 +2269,8 @@ table#wp-calendar {
 .reachouttext p:last-child {
   margin-bottom: 18px;
 }
+
+label.error {
+  color: #E90045;
+  font-weight: 400;
+}

@@ -10,6 +10,44 @@ $(document).ready(function(){
 
 });
 
+$('.contact-form').validate({
+
+	rules: {
+     // no quoting necessary
+	    name: {
+	    	required: true,
+	    },
+	    email: {
+	    	required: true,
+	    	email: true
+	    },
+	    message: {
+	    	required: true
+	    }
+	},
+
+	messages: {
+		name: "Please enter your name",
+		email: {
+			required: "Please enter your email address",
+			email: "Please enter a valid email address (e.g., name@example.com)"
+		},
+		message: "Please enter a message"
+	},
+
+    submitHandler: function(form) {
+        $.ajax({
+        	type: 'POST',
+            url: '/rileyboyd2015/wp-content/themes/rileyboyd-wptheme-2016/forms/contactform.php',
+            data: $(form).serialize(),
+            success: function(response) {
+				console.log('Ajaxed');            
+			}            
+        });
+    }
+
+});
+
 // Avoid spam
 var datCom = 'LmNvbQ=='
 var datWord = 'RW1haWw=';
