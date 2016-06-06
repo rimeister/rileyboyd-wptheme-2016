@@ -41,7 +41,7 @@ $('.contact-form').validate({
             url: 'http://rileyboyd.com/wp-content/themes/rileyboyd-wptheme-2016/forms/contactform.php',
             data: $(form).serialize(),
             success: function(response) {
-				console.log('Ajaxed');            
+				$('#contact-confirm-modal').modal();          
 			}            
         });
     }

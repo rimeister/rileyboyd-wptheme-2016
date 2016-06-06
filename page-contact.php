@@ -55,6 +55,27 @@ get_header(); ?>
 			</div>						
 
 		</main><!-- #main -->
+
+		<!-- Thank you message modal -->
+		<div class="modal fade" id="contact-confirm-modal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<h1>Thanks for your message!</h1>
+		        <h2>I'll get back to you soon.</h2>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

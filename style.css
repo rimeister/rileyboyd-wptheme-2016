@@ -1070,7 +1070,7 @@ button, html input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover,
 .comment-form #submit:hover  {
-  background: #a161bf;
+  background: #f2f2f2 !important;
   color: #fff;
 }
 
@@ -2273,4 +2273,50 @@ table#wp-calendar {
 label.error {
   color: #E90045;
   font-weight: 400;
+}
+
+/* Contact Confirm Thank You Modal */
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#contact-confirm-modal .modal-header, #contact-confirm-modal .modal-footer {
+  border: none;
+}
+
+#contact-confirm-modal h1 {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#contact-confirm-modal h2 {
+  text-align: center;
+}
+
+#contact-confirm-modal .btn {
+  margin: auto;
+  display: block;
+  color: #333333;
+  padding: 10px 45px;
+  background-color: #02ae7e !important;
 }

@@ -166,7 +166,7 @@ function activello_scripts() {
   wp_enqueue_script('activello-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array('jquery') );
 
   // Add Bootstrap default JS
-  wp_enqueue_script('activello-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
+//  wp_enqueue_script('activello-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
   // Add slider JS only if is front page ans slider is enabled
   if( ( is_home() || is_front_page() ) && get_theme_mod('activello_featured_hide') == 1 ) {
