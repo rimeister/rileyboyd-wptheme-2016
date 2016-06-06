@@ -38,7 +38,7 @@ $('.contact-form').validate({
     submitHandler: function(form) {
         $.ajax({
         	type: 'POST',
-            url: '/rileyboyd2015/wp-content/themes/rileyboyd-wptheme-2016/forms/contactform.php',
+            url: 'http://rileyboyd.com/wp-content/themes/rileyboyd-wptheme-2016/forms/contactform.php',
             data: $(form).serialize(),
             success: function(response) {
 				console.log('Ajaxed');            
