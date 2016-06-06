@@ -1774,7 +1774,7 @@ p.logged-in-as {
   background: none;
   color: #999;
   font-size: 12px;
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 .footer-nav.nav > li > a:hover {
   background-color: transparent;
@@ -1984,6 +1984,15 @@ table#wp-calendar {
 }
 
 /* Hero */
+
+@media only screen and (max-width: 767px) {
+  .hero-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+
 .hero {
   position: relative;
     background-image: url('images/background-road-with-gradient-2800pxwide-50percent-quality.jpg');
@@ -2239,7 +2248,12 @@ table#wp-calendar {
 
 .main-page-container {
   box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -11px rgba(0, 0, 0, 0.1), -12px 0 15px -11px rgba(0, 0, 0, 0.1);
-  padding: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-page-container {
+    padding: 0;
+  }
 }
 
 /* Contact Page */

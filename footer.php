@@ -14,16 +14,12 @@
 
 		</div>
 	</div>
-</div>
 
 	<div id="footer-area">
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info container">
-				<div class="row">
+			<div class="site-info">
 					<?php if( !get_theme_mod('footer_social') ) activello_social_icons(); ?>
 						<p>All content is &copy; 2016 Riley Boyd, except where otherwise noted.</p>
-					</div>
-				</div>
 			</div><!-- .site-info -->
 			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->

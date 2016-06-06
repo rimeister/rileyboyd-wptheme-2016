@@ -34,9 +34,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site container main-page-container">
 
-	<div class="container main-page-container">
 		<div class="row">
 			<div class="col-xs-12">
 
@@ -99,7 +98,7 @@
 					<?php if (is_front_page()) { ?>
 
 
-					<div class="container">
+					<div class="container hero-container">
 
 						<div class="row">
 
