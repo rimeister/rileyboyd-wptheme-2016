@@ -1164,6 +1164,13 @@ input[type=submit]:hover,
   border: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .navbar-default {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus,
@@ -1237,6 +1244,17 @@ input[type=submit]:hover,
     margin: auto;
     padding-bottom: 15px;    
     text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-search {    
+    clear: none;
+    float: right;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1328,6 +1346,7 @@ input[type=submit]:hover,
   padding-bottom: 18px;
 }
 .navbar-default .navbar-toggle {
+  background-color:rgba(0,0,0,0) !important;
   float: left;
   margin-top: 18px;
 }
@@ -1364,7 +1383,8 @@ input[type=submit]:hover,
   }
 
   .navbar-header {
-    float: left;
+    float: right;
+    margin-top: 7px;
   }
   .navbar-toggle {
     border: 0;
@@ -1961,6 +1981,13 @@ table#wp-calendar {
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .site-navigation-inner .logo-wrapper {
+    float: left;
+    padding: 10px 0;
+  }
 }
 
 .site-navigation-inner .logo-wrapper img {
