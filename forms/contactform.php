@@ -8,7 +8,6 @@
 	$subject = 'Contact Form Message';
 	$headers = 'From: '.$name.' <'.$email.'>'."\r\n".'Reply-to: '.$email;
 	//rom: '.$name.' <'.$email.'>'
-	$message = 'From: '.$name."\r\n".$message;
 	mail($to, $subject, $message, $headers);
 
 ?>
