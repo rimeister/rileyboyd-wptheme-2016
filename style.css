@@ -1253,7 +1253,7 @@ input[type=submit]:hover,
     width: 100%;
     position: absolute;
     top: 25px;
-    z-index: 2;
+    z-index: 1;
   }
 
 }
@@ -1990,6 +1990,8 @@ table#wp-calendar {
   .site-navigation-inner .logo-wrapper {
     float: left;
     padding: 10px 0;
+    position: relative;
+    z-index: 2;  
   }
 }
 
