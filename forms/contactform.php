@@ -2,7 +2,7 @@
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$message = $_POST['email'];
+	$message = $_POST['message'];
 
 	$to      = 'contact@rileyboyd.com';
 	$subject = 'Contact Form Message';
