@@ -1283,7 +1283,7 @@ input[type=submit]:hover,
     background: #ffffff;
     float: none;
     position: absolute;
-    top: 89px;
+    top: 92px;
     left: 0;
     padding: 0 15px;
     width: 100% !important;
@@ -1385,6 +1385,8 @@ input[type=submit]:hover,
   .navbar-header {
     float: right;
     margin-top: 7px;
+    position: relative;
+    z-index: 3;  
   }
   .navbar-toggle {
     border: 0;
