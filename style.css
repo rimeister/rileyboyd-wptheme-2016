@@ -375,6 +375,12 @@ h1.page-header-title {
   line-height: 36px;
 }
 
+@media only screen and (max-width: 767px) {
+  h1.page-header-title, .single .entry-header > h1.entry-title {
+    margin-top: 15px;
+  }
+}
+
 .entry-meta a {
   font-size: 13px;
   color: #6B6B6B;
@@ -1229,7 +1235,12 @@ input[type=submit]:hover,
 }
 .navbar-collapse {
   float: left;
-  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1253,9 +1264,9 @@ input[type=submit]:hover,
     clear: none;
     float: right;
     width: 100%;
-    margin-left: 86px;
+    margin-left: 67px;
     position: absolute;
-    top: 25px;
+    top: 19px;
     z-index: 1;
   }
 
@@ -1397,6 +1408,7 @@ input[type=submit]:hover,
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: left;
   }
 
   .navbar-default .navbar-nav > li.active > a {
@@ -1404,7 +1416,7 @@ input[type=submit]:hover,
   }
 
   .navbar-header {
-    float: right;
+    float: left;
     margin-top: 7px;
     position: relative;
     z-index: 3;  
@@ -1413,7 +1425,7 @@ input[type=submit]:hover,
     border: 0;
     border-radius: 0;
     margin-right: 0;
-    margin-top: 23px;
+    margin-top: 18px;
   }
 }
 
@@ -2009,7 +2021,7 @@ table#wp-calendar {
 
 @media only screen and (max-width: 767px) {
   .site-navigation-inner .logo-wrapper {
-    float: left;
+    float: right;
     padding: 10px 0;
     position: relative;
     z-index: 2;  
@@ -2019,6 +2031,12 @@ table#wp-calendar {
 .site-navigation-inner .logo-wrapper img {
   margin: auto;
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .site-navigation-inner .logo-wrapper img {
+      width: 55px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
