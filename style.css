@@ -2293,10 +2293,23 @@ label.error {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+  width: 460px;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal-dialog {
+    margin-top: 100px;
+    margin-left: -5px;    
+    width: 260px;
+  }
 }
 
 #contact-confirm-modal .modal-header, #contact-confirm-modal .modal-footer {
   border: none;
+}
+
+#contact-confirm-modal .modal-body {
+  padding-top: 0;
 }
 
 #contact-confirm-modal h1 {
@@ -2305,18 +2318,22 @@ label.error {
   font-size: 30px;
   font-weight: normal;
   letter-spacing: 0;
+  margin-top: 30px;
   text-align: center;
   text-transform: capitalize;
 }
 
 #contact-confirm-modal h2 {
+  font-family: 'Lora', serif;  
+  margin-bottom: 0;
   text-align: center;
 }
 
 #contact-confirm-modal .btn {
   margin: auto;
   display: block;
-  color: #333333;
+  color: #ffffff;
   padding: 10px 45px;
   background-color: #02ae7e !important;
+  margin-bottom: 15px;
 }
