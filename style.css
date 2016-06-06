@@ -1251,6 +1251,7 @@ input[type=submit]:hover,
     clear: none;
     float: right;
     width: 100%;
+    margin-left: 82px;
     position: absolute;
     top: 25px;
     z-index: 1;
@@ -1273,6 +1274,19 @@ input[type=submit]:hover,
   border: 1px solid #E8E8E8;
   padding-left: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .nav-search {
+    width: calc(100% - 144px);    
+  }
+
+  .nav-search input {
+    width: 80%;
+    float: left;  
+  }
+}
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
