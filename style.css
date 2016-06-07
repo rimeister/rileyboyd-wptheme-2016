@@ -377,7 +377,7 @@ h1.page-header-title {
 
 @media only screen and (max-width: 767px) {
   h1.page-header-title, .single .entry-header > h1.entry-title {
-    margin-top: 15px;
+    margin-top: 39px;
   }
 }
 
@@ -1172,6 +1172,7 @@ input[type=submit]:hover,
 
 @media only screen and (max-width: 767px) {
   .navbar-default {
+    border-bottom: 1px solid #e3e3e3;
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -1264,10 +1265,13 @@ input[type=submit]:hover,
     clear: none;
     float: right;
     width: 100%;
+    margin-top: 0;
     margin-left: 67px;
+    padding: 0;
     position: absolute;
-    top: 19px;
+    top: 18px;
     z-index: 1;
+    width: calc(100% - 174px);
   }
 
 }
@@ -1286,16 +1290,6 @@ input[type=submit]:hover,
 .nav-search input {
   border: none;
   padding-left: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-
-  .nav-search {
-    width: calc(100% - 174px);
-    padding: 0;
-    margin-top: 4px;
-  }    
-
 }
 
   .nav-search input {
@@ -1425,7 +1419,7 @@ input[type=submit]:hover,
     border: 0;
     border-radius: 0;
     margin-right: 0;
-    margin-top: 18px;
+    margin-top: 13px;
   }
 }
 
@@ -2022,7 +2016,7 @@ table#wp-calendar {
 @media only screen and (max-width: 767px) {
   .site-navigation-inner .logo-wrapper {
     float: right;
-    padding: 10px 0;
+    padding: 8px 0 10px 0;
     position: relative;
     z-index: 2;  
   }
@@ -2036,6 +2030,7 @@ table#wp-calendar {
 @media only screen and (max-width: 767px) {
   .site-navigation-inner .logo-wrapper img {
       width: 55px;
+      border-radius: 3px;
   }
 }
 
@@ -2224,6 +2219,12 @@ table#wp-calendar {
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .cv-wrapper {
+    margin-top: 0;
+  }
+}
+
 .cv-left {
   width: 100%;
 }
@@ -2243,8 +2244,20 @@ table#wp-calendar {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 767px) {
+  .cv-wrapper h2:first-child {
+    margin-top: 2px;
+  }
+}
+
 .cv-wrapper div {
   margin-top: 20px;  
+}
+
+@media only screen and (max-width: 767px) {
+  .cv-wrapper .cv-left {
+    margin-top: 7px;
+  }
 }
 
 .cv-wrapper h3 {
