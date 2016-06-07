@@ -2198,6 +2198,12 @@ table#wp-calendar {
     background: #00e935;
 }
 
+@media only screen and (max-width: 992px) {
+  .article-container > h3:after {
+    background: #E90045;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   .about-me-sidebar-img {
