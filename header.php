@@ -27,12 +27,12 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700">
 
 <!-- CSS Files -->
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/flexslider.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/unite-gallery.css">
-<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/css/unite-gallery/themes/default/ug-theme-default.css' type='text/css' />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/unite-gallery.css">
+<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/dev/css/unite-gallery/themes/default/ug-theme-default.css' type='text/css' />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/dev/css/style.css" type="text/css" >
 
 <?php include_once("template_files/favicon/favicon_links.php") ?> 
 <?php include_once("template_files/analytics/analyticstracking.php") ?> 
