@@ -162,27 +162,6 @@ function activello_scripts() {
   // Add main theme stylesheet
   wp_enqueue_style( 'activello-style', get_stylesheet_uri() );
 
-  // Add Modernizr for better HTML5 and CSS3 support
-  wp_enqueue_script('activello-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array('jquery') );
-
-  // Add Bootstrap default JS
-//  wp_enqueue_script('activello-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
-
-  // Add slider JS only if is front page ans slider is enabled
-  if( ( is_home() || is_front_page() ) && get_theme_mod('activello_featured_hide') == 1 ) {
-    wp_register_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
-  }
-
-  // Main theme related functions
-  wp_enqueue_script( 'activello-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
-
-  // This one is for accessibility
-  wp_enqueue_script( 'activello-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
-
-  // Threaded comments
-  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-    wp_enqueue_script( 'comment-reply' );
-  }
 }
 add_action( 'wp_enqueue_scripts', 'activello_scripts' );
 

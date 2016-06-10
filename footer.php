@@ -29,9 +29,25 @@
 <!-- JS Plugins -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/modernizr.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/flexslider.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/functions.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/skip-link-focus-fix.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/unitegallery.min.js"></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri()?>/themes/tiles/ug-theme-tiles.js'></script> 
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- My Scripts -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/js/scripts.js"></script>
