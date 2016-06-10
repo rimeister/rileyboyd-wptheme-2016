@@ -24,6 +24,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700">
+
 <!-- CSS Files -->
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/font-awesome.min.css">
