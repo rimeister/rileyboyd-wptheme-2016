@@ -144,7 +144,7 @@ add_filter( 'gallery_style', 'activello_remove_gallery_css' );
  * Enqueue scripts and styles.
  */
 function activello_scripts() {
-
+/*
   // Add Bootstrap default CSS
   wp_enqueue_style( 'activello-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
 
@@ -161,7 +161,7 @@ function activello_scripts() {
 
   // Add main theme stylesheet
   wp_enqueue_style( 'activello-style', get_stylesheet_uri() );
-
+*/
 }
 add_action( 'wp_enqueue_scripts', 'activello_scripts' );
 
