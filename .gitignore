@@ -1,3 +1,4 @@
 #Ignore hero images
 /images/hero
 /template_files/analytics
+/node_modules
