@@ -1,34 +1,41 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    minifycss: {
-      /*
-      dist: {
+
+    cssmin: {
+      target: {
         files: {
-          'dev/css/style.css' : 'wp-content/themes/rileyboyd2015/library/scss/style.scss'
+          'style.css': ['dev/css/*.css']
         }
       }
-      */
-    },    
-    minifyjs: {/*
-      dist: {
+    },
+
+    uglify: {
+      my_target: {
         files: {
-          'dev/css/style.css' : 'wp-content/themes/rileyboyd2015/library/scss/style.scss'
+          'prod/js/scripts.min.js': ['dev/js/*.js']
         }
       }
-      */
-    },    
+    },
+
     watch: {
       css: {
         files: 'dev/css/*.css',
-        tasks: ['minifycss']
+        tasks: ['cssmin']
       },
       js: {
         files: 'dev/js/*.js',
-        tasks: ['minifyjs']
+        tasks: ['uglify']
       }    
     }
+
   });
+
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');  
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('default',['watch']);
+  grunt.registerTask('default',['cssmin']);
+  grunt.registerTask('default',['uglify']);
+
 }
