@@ -28,7 +28,7 @@
 
 <?php
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-if (strpos($url,'rileyboyd.com') !== false) {
+if (strpos($url,'rileyboyd') !== false) {
 	?>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/prod/js/scripts.min.js"></script>
 <?php
