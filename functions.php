@@ -304,7 +304,7 @@ function my_post_gallery($output, $attr) {
 
 
 //      $output .= "<img alt=\"Image Title\" src=\"{$imgThumb[0]}\" data-image=\""."\" data-description=\"Image Description\">";
-        $output .= "<img alt=\"Image Title\" src=\"{$imgThumb[0]}\" data-image=\"{$imgFull[0]}\" data-description=\"Image Description\">";
+        $output .= "<img alt=\"\" src=\"{$imgThumb[0]}\" data-image=\"{$imgFull[0]}\" data-description=\"Image Description\">";
 //      $output .= "<img src=\"{$imgThumb[0]}\">";
 
 
