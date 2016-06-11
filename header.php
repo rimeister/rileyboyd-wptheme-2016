@@ -30,7 +30,7 @@
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 if (strpos($url,'rileyboyd.com') !== false) {
 	?>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/prod/css/minified.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/style.css">
 <?php
 } else {
 ?>
