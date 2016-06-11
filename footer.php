@@ -44,12 +44,11 @@ if (strpos($url,'rileyboyd.com') !== false) {
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/unitegallery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/scripts.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/ug-theme-tiles.js"></script> 
+
 <?php    
 }
 ?>
-
-	<script type='text/javascript' src='<?php echo get_template_directory_uri()?>/dev/css/unite-gallery/themes/tiles/ug-theme-tiles.js'></script> 
-
 
 <?php wp_footer(); ?>
 

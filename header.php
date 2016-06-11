@@ -39,12 +39,13 @@ if (strpos($url,'rileyboyd.com') !== false) {
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/unite-gallery.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/style.css" type="text/css" >
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/ug-theme-default.css">
+
 <?php    
 }
 ?>
 
-<link rel='stylesheet' href='<?php echo get_template_directory_uri()?>/dev/css/unite-gallery/themes/default/ug-theme-default.css' type='text/css' />
 
 
 <?php include_once("template_files/favicon/favicon_links.php") ?> 
