@@ -26,7 +26,7 @@ get_header(); ?>
 		?>
 
 			<div class="article-container">
-				<h3>Latest Articles</h3>
+				<h3>Latest Blog Posts</h3>
 				<?php
 				    while($rp->have_posts()) : $rp->the_post();
 				?>

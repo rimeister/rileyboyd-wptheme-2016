@@ -405,7 +405,7 @@ function custom_breadcrumbs() {
 
             if($post_type == 'post') {
               $siteUri = get_site_url();
-              echo '<li class="item-cat"><a class="bread-cat" href="'.$siteUri.'/articles/" title="Articles">Articles</a></li>';
+              echo '<li class="item-cat"><a class="bread-cat" href="'.$siteUri.'/blog/" title="Blog">Blog</a></li>';
               echo '<li class="separator"> ' . $separator . ' </li>';              
             }
               
