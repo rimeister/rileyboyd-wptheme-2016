@@ -14,7 +14,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1 class="page-header-title">Aritcles</h1>
+		<h1 class="page-header-title">Blog</h1>
         
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
@@ -37,7 +37,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<h2>I haven't posted any articles yet. Sorry about that!</h2>
+			<h2>I haven't written any blog posts yet.</h2>
 			<p><a href="/">Back to the home page</a>.</p>
 
 		<?php endif; ?>
