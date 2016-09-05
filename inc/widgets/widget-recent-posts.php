@@ -22,9 +22,6 @@ class activello_recent_posts extends WP_Widget
       echo $title;
       echo $after_title;
 
-		/**
-		 * Widget Content
-		 */
     ?>
 
     <!-- recent posts -->
@@ -33,7 +30,7 @@ class activello_recent_posts extends WP_Widget
                 <?php
 
                   $featured_args = array(
-                      'post_type' => array('post', 'photos'),
+                      'post_type' => array('post'),
                       'posts_per_page' => $limit,
                       'ignore_sticky_posts' => 1
                     );
