@@ -600,7 +600,13 @@ article.grid iframe {
         width: 100%;
         padding: 0!important;
     }
+    .blog.home .page-1 article.post:first-child .post-inner-content, .blog.home .page-1 article.post:nth-child(2) .post-inner-content{
+        border-bottom: 1px solid #dedede;
+    }
 
+    .home.page  article.post:first-child .post-inner-content, .home.page  article.post:nth-child(2) .post-inner-content, .post-inner-content {
+        border-bottom: 1px solid #dedede;
+    }
     .blog.home .page-1 article.post:first-child .post-inner-content{
         padding: 0 0 50px;
     }
