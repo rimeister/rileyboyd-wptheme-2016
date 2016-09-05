@@ -579,10 +579,6 @@ article.grid iframe {
         overflow: hidden;
     }
 
-    .article-container:last-child .post-inner-content {
-      border-bottom: none;
-    }
-
     .blog.home article.post {
         width: 50%;
         margin: 0;
@@ -611,6 +607,7 @@ article.grid iframe {
         padding: 0 0 50px;
     }
     .post-inner-content{
+      border-bottom: 1px solid #dedede;
       padding: 0 0 50px;
       margin-bottom: 30px;    
     }
