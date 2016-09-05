@@ -641,6 +641,9 @@ article.grid iframe {
   .post-inner-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 45px;
+    padding-bottom: 45px !important;
   }
   #secondary {
     padding: 30px 15px 0!important;
@@ -1332,7 +1335,7 @@ input[type=submit]:hover,
     background: #ffffff;
     float: none;
     position: absolute;
-    top: 92px;
+    top: 74px;    
     left: 0;
     padding: 0 15px;
     width: 100% !important;
