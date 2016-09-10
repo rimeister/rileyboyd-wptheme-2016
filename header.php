@@ -21,6 +21,9 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Pinterest meta tag -->
+<meta name="p:domain_verify" content="2deb99ec739b5ea9504ec4b1605da92a"/>
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
