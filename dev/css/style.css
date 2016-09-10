@@ -1106,11 +1106,32 @@ input[type=submit]:hover,
 .post-navigation .nav-previous,
 .paging-navigation .nav-previous {
   float: left;
+  width: 50%;
 }
+
+.post-navigation .nav-previous a,
+.paging-navigation .nav-previous a {
+  padding: 0 10px;
+}
+
+.post-navigation .nav-previous a i,
+.paging-navigation .nav-previous a i {
+  margin-left: -10px;
+}
+
 .post-navigation .nav-next,
 .paging-navigation .nav-next  {
   float: right;
   text-align: right;
+  width: 50%;
+}
+.post-navigation .nav-next a,
+.paging-navigation .nav-next a{
+  padding: 0 10px;
+}
+.post-navigation .nav-next a i,
+.paging-navigation .nav-next a i{
+  margin-right: -10px;
 }
 .more-link {
   float: right;
