@@ -381,7 +381,7 @@ h1.page-header-title {
 }
 
 .entry-meta a {
-  font-size: 16px;
+  font-size: 13px;
   color: #6B6B6B;
 }
 .entry-meta {
@@ -400,6 +400,7 @@ footer.entry-meta {
   margin-right: 3px;
 }
 .entry-meta span {
+  font-size: 14px;
   margin-right: 10px;
 }
 .entry-title {
