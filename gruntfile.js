@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'prod/js/scripts.min.js': ['dev/js/jquery-2.2.4.min.js','dev/js/bootstrap.min.js', 'dev/js/modernizr.min.js', 'dev/js/flexslider.min.js', 'dev/js/functions.min.js', 'dev/js/skip-link-focus-fix.js', 'dev/js/jquery.validate.min.js', 'dev/js/unitegallery.min.js', 'dev/js/scripts.js', 'dev/js/ug-theme-tiles.js']
+          'prod/js/scripts.min.js': ['dev/js/jquery-2.2.4.min.js','dev/js/bootstrap.min.js', 'dev/js/modernizr.min.js', 'dev/js/flexslider.min.js', 'dev/js/functions.min.js', 'dev/js/skip-link-focus-fix.js', 'dev/js/jquery.validate.min.js', 'dev/js/unitegallery.min.js', 'dev/js/scripts.js', 'dev/js/ug-theme-tiles.js', 'dev/js/instafeed.min.js']
         }
       }
     },

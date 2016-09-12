@@ -44,6 +44,7 @@
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
+			<div id="instafeed"></div>
 		</div>
 	</div><!-- #secondary -->
 	<?php endif; ?>

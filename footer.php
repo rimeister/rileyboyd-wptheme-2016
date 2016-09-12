@@ -43,6 +43,7 @@ if (strpos($url,'rileyboyd') !== false) {
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/skip-link-focus-fix.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/unitegallery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/instafeed.min.js"></script>	
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/scripts.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/dev/js/ug-theme-tiles.js"></script> 
 
