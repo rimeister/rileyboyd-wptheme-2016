@@ -82,6 +82,10 @@ get_header(); ?>
 				?>
 			</div>			
 
+			<div class="go-to-blog-wrapper">
+				<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="go-to-blog"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Go To Blog</a>
+			</div>
+
 			<?php
 				wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
 				endif;			

@@ -2231,13 +2231,27 @@ table#wp-calendar {
   text-align: center;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 992px) {
-  .article-container > h3 {
 
-    margin-top: 20px;  
-    margin-bottom: 0;
+.go-to-blog-wrapper {
+  text-align: center;
+}
 
-  }
+.go-to-blog-wrapper a.go-to-blog {
+
+    font-family: Montserrat,serif;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-transform: uppercase;
+
+}
+
+.go-to-blog-wrapper a.go-to-blog > i {
+  margin-left: -16px;
 }
 
 .article-container > h3:after {
@@ -2251,10 +2265,19 @@ table#wp-calendar {
     background: #00e935;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
+
+  .article-container > h3 {
+
+    margin-top: 20px;  
+    margin-bottom: 0;
+
+  }
+
   .article-container > h3:after {
     background: #E90045;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
