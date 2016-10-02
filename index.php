@@ -33,7 +33,22 @@ get_header(); ?>
 			
 			</div>
 			
-			<?php activello_paging_nav(); ?>
+			<div class="pagination-wrapper">
+
+				<?php 
+
+					the_posts_pagination(
+						array(
+							'mid_size' => '2',
+							'prev_text' => '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>&nbsp;Previous',
+							'next_text' => 'Next&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i>',
+							'screen_reader_text' => 'Numbered Pagination'
+						)
+					); 
+
+				?>
+
+			</div>
 
 		<?php else : ?>
 

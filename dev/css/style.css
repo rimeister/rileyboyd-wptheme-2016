@@ -20,7 +20,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 1. Global
 2. Content
 3. Post styling
-4. Singe Post/Page Pagination
+4. Single Post/Page Pagination
 5. Media
 6. Widgets
 7. Buttons
@@ -700,6 +700,39 @@ article.grid iframe {
 .bottom-pagination {
   text-align: center;
 }
+
+/* Index page pagination */
+.pagination-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.pagination-wrapper .navigation .nav-links > a, .pagination-wrapper .navigation .nav-links > span {
+  float: left;
+  margin: 0px 15px 0px 0px;
+}
+
+.pagination-wrapper .navigation .nav-links > a {
+  line-height: 26px;
+}
+
+.pagination-wrapper .navigation .nav-links > span {
+    background-color: #E90045!important;
+    border-radius: 3px;
+    box-sizing: content-box;
+    color: #fff;
+    line-height: 26px;
+    padding: 0px 8px;
+    display: inline-block;
+    height: 26px;
+    width: 10px;
+}
+
+.pagination-wrapper .navigation .nav-links > a.prev > i, .pagination-wrapper .navigation .nav-links > a.next > i  {
+  top: 1px;
+  position: relative;
+}
+
 
 /* =Asides
 ----------------------------------------------- */
