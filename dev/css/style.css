@@ -2548,3 +2548,9 @@ label.error {
   background-color: #02ae7e !important;
   margin-bottom: 15px;
 }
+
+/* Cinemagraphs on posts */
+.featured-cinemagraph {
+  width: 100%;
+  height: auto;
+}

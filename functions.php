@@ -555,3 +555,51 @@ function custom_breadcrumbs() {
     }
        
 }
+
+# Cinemagraph custom fields
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_cinemagraph-featured-image',
+    'title' => 'Cinemagraph Featured Image',
+    'fields' => array (
+      array (
+        'key' => 'field_580d619774e87',
+        'label' => 'Cinemagraph MP4',
+        'name' => 'cinemagraph_mp4',
+        'type' => 'file',
+        'instructions' => 'Upload an MP4 file for the cinemagraph that will appear in place of the featured image',
+        'save_format' => 'url',
+        'library' => 'all',
+      ),
+      array (
+        'key' => 'field_580d621674e88',
+        'label' => 'Cinemagraph OGG',
+        'name' => 'cinemagraph_ogg',
+        'type' => 'file',
+        'instructions' => 'Upload an OGG file for the cinemagraph that will appear in place of the featured image',
+        'save_format' => 'url',
+        'library' => 'all',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+
