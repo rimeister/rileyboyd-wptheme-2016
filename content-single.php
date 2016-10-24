@@ -32,22 +32,21 @@
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 			
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-
-                    <?php 
+                <?php 
+                    //$imageurl = get_post_meta($post->ID, 'cinemagraph_mp4', true);
 
                     $cinemagraphMp4 = get_field('cinemagraph_mp4');
                     $cinemagraphOgg = get_field('cinemagraph_ogg');
 
-                    if ( isset($cinemagraphMp4) || isset($cinemagraphOgg) ) {
+                    if ( !empty($cinemagraphMp4) || !empty($cinemagraphOgg) ) {
 
 						echo '<video width="1170" height="500" autoplay loop class="featured-cinemagraph">';
 
-						if ( isset($cinemagraphMp4) ) {
+						if ( !empty($cinemagraphMp4) ) {
 							echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4">';
 						}
 
-						if ( isset($cinemagraphOgg) ) {
+						if ( !empty($cinemagraphOgg) ) {
 							echo  '<source src="' . $cinemagraphOgg . '" type="video/mp4">';							
 						}
 

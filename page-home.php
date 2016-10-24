@@ -59,31 +59,38 @@ get_header(); ?>
 								<?php 
 							       if ( has_post_thumbnail() ) {  // check if the post has a Post Thumbnail assigned to it.
 							    ?>
-					            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 
-					                    <?php 
+
+
+
+
+
+            					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+
+					                <?php 
+					                    //$imageurl = get_post_meta($post->ID, 'cinemagraph_mp4', true);
 
 					                    $cinemagraphMp4 = get_field('cinemagraph_mp4');
 					                    $cinemagraphOgg = get_field('cinemagraph_ogg');
 
-					                    if ( isset($cinemagraphMp4) || isset($cinemagraphOgg) ) {
+					                    if ( !empty($cinemagraphMp4) || !empty($cinemagraphOgg) ) {
 
 											echo '<video width="1170" height="500" autoplay loop class="featured-cinemagraph">';
 
-											if ( isset($cinemagraphMp4) ) {
+											if ( !empty($cinemagraphMp4) ) {
 												echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4">';
 											}
 
-											if ( isset($cinemagraphOgg) ) {
+											if ( !empty($cinemagraphOgg) ) {
 												echo  '<source src="' . $cinemagraphOgg . '" type="video/mp4">';							
 											}
 
 											echo '</video>';                    
 										} else {
-					                    	the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); 
+							          		the_post_thumbnail(); //display the thumbnail
 					                    }
 
-					                    ?>
+					                ?>
 					            </a>
 
 							    <?php } ?>
