@@ -43,11 +43,11 @@
 						echo '<video width="1170" height="500" autoplay loop class="featured-cinemagraph">';
 
 						if ( !empty($cinemagraphMp4) ) {
-							echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4">';
+							echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4" poster="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '">';
 						}
 
 						if ( !empty($cinemagraphOgg) ) {
-							echo  '<source src="' . $cinemagraphOgg . '" type="video/mp4">';							
+							echo  '<source src="' . $cinemagraphOgg . '" type=\'video/ogg; codecs="theora, vorbis"\' poster="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '">';							
 						}
 
 						echo '</video>';                    

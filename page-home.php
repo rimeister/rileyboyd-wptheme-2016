@@ -67,8 +67,7 @@ get_header(); ?>
 
             					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 
-					                <?php 
-					                    //$imageurl = get_post_meta($post->ID, 'cinemagraph_mp4', true);
+            						<?php
 
 					                    $cinemagraphMp4 = get_field('cinemagraph_mp4');
 					                    $cinemagraphOgg = get_field('cinemagraph_ogg');
@@ -78,11 +77,11 @@ get_header(); ?>
 											echo '<video width="1170" height="500" autoplay loop class="featured-cinemagraph">';
 
 											if ( !empty($cinemagraphMp4) ) {
-												echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4">';
+												echo '<source src="' . $cinemagraphMp4 . '" type="video/mp4" poster="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '">';
 											}
 
 											if ( !empty($cinemagraphOgg) ) {
-												echo  '<source src="' . $cinemagraphOgg . '" type="video/mp4">';							
+												echo  '<source src="' . $cinemagraphOgg . '" type=\'video/ogg; codecs="theora, vorbis"\' poster="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '">';							
 											}
 
 											echo '</video>';                    
