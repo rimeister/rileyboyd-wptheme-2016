@@ -2146,7 +2146,7 @@ table#wp-calendar {
 .hero {
   position: relative;
     background-image: url('../../images/background-road-with-gradient-767px-tinified.jpg');
-    background-position: center center;
+    background-position: center 0;
     background-size: cover;
 }
 
