@@ -2167,6 +2167,10 @@ table#wp-calendar {
   text-transform: uppercase;
 }
 
+.hero-text h1 span {
+    color: #E90045;
+}
+
 .hero-text h2 {
   width: 100%;
   color: #ffffff;

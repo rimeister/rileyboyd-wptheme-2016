@@ -129,7 +129,7 @@ if (strpos($url,'rileyboyd') !== false) {
 
 							<div class="hero col-sm-12">
 								<div class="hero-text">
-									<h1>My name is Riley.</h1>
+									<h1>My name is <span>Riley</span>.</h1>
 									<h2>I have a curious mind, a creative spirit, and a love for adventure.</h2>
 								</div>
 								<img src="<?php echo get_template_directory_uri()?>/images/hero/hero-image-scot-highlands.jpg" alt="Picture of Riley in the Scottish Highlands">
