@@ -29,27 +29,6 @@
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700|Maven+Pro:400,700">
 
-<?php
-$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-if (strpos($url,'rileyboyd') !== false) {
-	?>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/prod/css/style.min.css">
-<?php
-} else {
-?>
-	<!-- CSS Files -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/flexslider.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/unite-gallery.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/dev/css/ug-theme-default.css">
-
-<?php    
-}
-?>
-
-
 
 <?php include_once("template_files/favicon/favicon_links.php") ?> 
 <?php include_once("template_files/analytics/analyticstracking.php") ?> 

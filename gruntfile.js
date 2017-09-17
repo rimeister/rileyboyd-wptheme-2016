@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'prod/css/style.min.css': ['dev/css/*.css']
+          'style.css': ['src/css/*.css']
         }
       }
     },
@@ -13,18 +13,18 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'prod/js/scripts.min.js': ['dev/js/jquery-2.2.4.min.js','dev/js/bootstrap.min.js', 'dev/js/modernizr.min.js', 'dev/js/flexslider.min.js', 'dev/js/functions.min.js', 'dev/js/skip-link-focus-fix.js', 'dev/js/jquery.validate.min.js', 'dev/js/unitegallery.min.js', 'dev/js/scripts.js', 'dev/js/ug-theme-tiles.js', 'dev/js/instafeed.min.js']
+          'library/js/scripts.min.js': ['src/js/jquery-2.2.4.min.js','src/js/bootstrap.min.js', 'src/js/modernizr.min.js', 'src/js/flexslider.min.js', 'src/js/functions.min.js', 'src/js/skip-link-focus-fix.js', 'src/js/jquery.validate.min.js', 'src/js/unitegallery.min.js', 'src/js/scripts.js', 'src/js/ug-theme-tiles.js', 'src/js/instafeed.min.js']
         }
       }
     },
 
     watch: {
       css: {
-        files: 'dev/css/*.css',
+        files: 'src/css/*.css',
         tasks: ['cssmin']
       },
       js: {
-        files: 'dev/js/*.js',
+        files: 'src/js/*.js',
         tasks: ['uglify']
       }    
     }
