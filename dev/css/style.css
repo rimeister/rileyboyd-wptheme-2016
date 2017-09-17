@@ -2579,7 +2579,7 @@ label.error {
     padding: 0 15px;
 }
 
-.social-sharing-wrapper a, .social-sharing-wrapper a:hover {
+.single .entry-content .social-sharing-wrapper a, .single .entry-content .social-sharing-wrapper a:hover {
     background: none;
 }
 
