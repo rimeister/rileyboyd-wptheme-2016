@@ -62,10 +62,19 @@
 
 				<?php the_content(); ?>
 
+
 				<?php
 
 					if (function_exists(DISPLAY_ULTIMATE_SOCIAL_ICONS)){
-						echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
+				?>
+					<div class="social-sharing-wrapper">
+
+						<h4>Share this post</h4>
+						<?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+
+					</div>
+
+				<?php
 					}
 
 				?>
