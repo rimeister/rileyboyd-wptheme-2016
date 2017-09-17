@@ -61,6 +61,14 @@
 			<div class="entry-content">
 
 				<?php the_content(); ?>
+
+				<?php
+
+					if (function_exists(DISPLAY_ULTIMATE_SOCIAL_ICONS)){
+						echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
+					}
+
+				?>
 				
 				<?php
 				wp_link_pages( array(
