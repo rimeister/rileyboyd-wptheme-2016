@@ -1926,7 +1926,7 @@ p.logged-in-as {
   background: #363636;
   background: rgba(100, 100, 100, 0.4);
   color: #FFF;
-  bottom: 4%;
+  bottom: 8%;
   cursor: pointer;
   display: none;
   position: fixed;
