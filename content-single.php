@@ -12,6 +12,14 @@
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php custom_breadcrumbs(); ?>
 
+				<?php
+
+					if(function_exists('social_warfare')):
+					    social_warfare();
+					endif;
+
+				?>
+
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php activello_posted_on(); ?>
@@ -62,22 +70,6 @@
 
 				<?php the_content(); ?>
 
-
-				<?php
-
-					if (function_exists(DISPLAY_ULTIMATE_SOCIAL_ICONS)){
-				?>
-					<div class="social-sharing-wrapper">
-
-						<h4>Share this post</h4>
-						<?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-
-					</div>
-
-				<?php
-					}
-
-				?>
 				
 				<?php
 				wp_link_pages( array(
